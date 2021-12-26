@@ -1,0 +1,207 @@
+body {
+  font-family: 'M PLUS 1', sans-serif;
+
+  #main {
+    background-color: antiquewhite;
+    .wf-mplus1p { font-family: "M PLUS 1p"; }
+
+    &-row {
+      background-color: antiquewhite;
+      height: 100vh;
+
+      #input-all {
+        background-color: lightblue;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .input-wrap {
+          color: #7D5130;
+          background-color: white;
+          padding: 12px 16px;
+          border: 2px solid #ECECEC;
+          border-radius: 8px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          &:first-child {
+            margin-bottom: 16px;
+          }
+
+          .input-content {
+            display: flex;
+            flex-direction: row;
+
+            &:first-child {
+              margin-bottom: 16px;
+            }
+
+            // レベルのラベル
+            #level-label {
+              // ラベルのFontSize
+              font-size: 15px;
+              padding-bottom: 1px;
+            }
+
+            #level-select {
+              padding-left: 5px;
+            }
+
+            #have-label {
+              position: relative;
+
+              #have-img {
+                top: -3px;
+                left: 50px;
+              }
+            }
+          }
+
+          #have-label,
+          #remaining-label {
+            text-align: left;
+            font-size: 16px;
+          }
+
+          // 所持数 input要素内のpadding
+          #have {
+            padding-left: 13px;
+          }
+
+          #input-remaining {
+            display: flex;
+            flex-direction: row;
+          }
+
+          .label-wrap {
+            // ↓ labelタグの幅
+            width: 100px;
+            // ↓ labelタグの高さ
+            height: 30px;
+            background-color: #EDE6E4;
+            border-radius: 8px;
+            padding: 0 12px;
+            display: flex;
+            align-items: center;
+
+            #rate-label {
+              position: relative;
+              font-size: 16px;
+
+              #rate-img {
+                left: 50px;
+                top: -3px;
+              }
+            }
+          }
+
+          #input-wrap {
+            width: 96px;
+            padding-left: 8px;
+            margin-left: 8px;
+            color: #7D5130;
+            border: 2px solid #ECECEC;
+            border-radius: 8px;
+
+            display: flex;
+            align-items: center;
+          }
+
+          .input {
+            // ↓ inputタグの幅
+            width: 150px;
+            height: 30px;
+            color: #7D5130;
+            border: 2px solid #ECECEC;
+            border-radius: 8px;
+            padding: 0 8px;
+            margin-left: 8px;
+            font-size: 16px;
+          }
+        }
+      }
+
+      .modal-content {
+        border: 2px solid rgb(236, 236, 236);;
+        border-radius: 8px;
+
+        .modal-body {
+          background-color: rgb(244,243,248);
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+        }
+
+        #result {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 16px;
+
+          #result-div {
+            width: 100%;
+            height: 224px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            color: #7D5130;
+            background-color: white;
+            padding: 12px 16px;
+            border: 2px solid #ECECEC;
+            border-radius: 8px;
+
+            &-wrap {
+              display: flex;
+              flex-direction: column;
+              justify-content: left;
+              .result-h5 {
+                font-size: 16px;
+                text-align: left;
+                margin-bottom: 16px;
+
+                &:last-child {
+                  margin-bottom: 0;
+                }
+              }
+            }
+          }
+        }
+        #close-btn {
+          width: 100%;
+          background-color: rgba(128, 205, 10, 1);
+          border: 1px solid rgba(128, 205, 10, 1);
+          color: white;
+          width: 183px;
+          margin: 0 auto;
+          font-weight: bold;
+        }
+      }
+
+      #calc-btn {
+        margin: 0 auto;
+        margin-top: 16px;
+        width: 183px;
+        background-color: rgba(128, 205, 10, 1);
+        border: 1px solid rgba(128, 205, 10, 1);
+        border-radius: 4px;
+      }
+    }
+  }
+}
+
+.center {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+}
+
+.statue-img {
+  width: 30px;
+  position: absolute;
+}

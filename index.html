@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+  <!-- Web font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@700&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./Sass/css/index.css">
+</head>
+<body>
+  <div id="main" class="container-fluid">
+    <div id="main-row" class="row">
+      <div id="input-all" class="col-xl-4 offset-xl-4 col-md-6 offset-md-3">
+
+        <div id="input-wrap-1" class="input-wrap">
+
+          <div id="input-have" class="input-content">
+            <div id="input-have-label-wrap" class="label-wrap">
+              <label id="have-label" for="have">
+                所持数
+                <img src="./img/statue.png" alt="" id="have-img" class="statue-img">
+              </label>
+            </div>
+            <input id="have" class="input" type="number" min="0" max="999" placeholder="0" inputmode="numeric" pattern="\d*">
+          </div>
+
+          <div id="input-level" class="input-content">
+            <div id="input-level-label-wrap" class="label-wrap">
+              <label id="level-label" for="level">覚醒レベル</label>
+            </div>
+            <select name="level" id="level-select" class="input">
+              <option value="1">★ 1</option>
+              <option value="2">★ 2</option>
+              <option value="3">★ 3</option>
+              <option value="4">★ 4</option>
+            </select>
+          </div>
+
+        </div>
+
+        <div id="input-wrap-2" class="input-wrap">
+
+          <div id="input-rate" class="input-content">
+            <div class="label-wrap">
+              <label id="rate-label" for="rate">
+                必要
+                <img src="./img/statue.png" alt="" id="rate-img" class="statue-img">
+              </label>
+            </div>
+            <select name="rate" id="rate-select" class="input"></select>
+          </div>
+
+          <div id="input-remaining" class="input-content">
+            <div class="label-wrap">
+              <label id="remaining-label" for="remaining">交換回数</label>
+            </div>
+            <select name="remaining" id="remaining-select" class="input"></select>
+          </div>
+
+        </div>
+
+        <!-- 計算ボタン -->
+        <button id="calc-btn" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">計算</button>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <!-- 計算結果を表示 -->
+              <div id="result">
+                <div id="result-div">
+                  <div id="result-div-wrap">
+                  </div>
+                </div>
+              </div>
+              <button id="close-btn" type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <script src="./Js/create.js"></script>
+  <script src="./Js/count.js"></script>
+</body>
+</html>

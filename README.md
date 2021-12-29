@@ -1,6 +1,6 @@
 ﻿# Statue_Calculator<br>
 ウマ娘プリティーダービー用 女神像計算機<br>
-atoleiyu.github.io/statue_calculator/
+https://atoleiyu.github.io/Statue_Calculator/ <br>
 
 【使用方法】<br>
 所持数 = 現在所持しているピース数を入力<br>

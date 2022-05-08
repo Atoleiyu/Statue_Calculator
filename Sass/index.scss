@@ -58,7 +58,11 @@ body {
             }
           }
 
-          #have-label,
+          // 保有ピース数のフォントサイズ
+          #have-label {
+            font-size: 15px;
+          }
+
           #remaining-label {
             text-align: left;
             font-size: 16px;

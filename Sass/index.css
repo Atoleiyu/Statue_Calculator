@@ -83,7 +83,10 @@ body #main-row #input-all .input-wrap .input-content #have-label #have-img {
   left: 50px;
 }
 
-body #main-row #input-all .input-wrap #have-label,
+body #main-row #input-all .input-wrap #have-label {
+  font-size: 15px;
+}
+
 body #main-row #input-all .input-wrap #remaining-label {
   text-align: left;
   font-size: 16px;

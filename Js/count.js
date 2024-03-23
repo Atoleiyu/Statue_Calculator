@@ -22,10 +22,10 @@ function remainningCount() {
 
   const level = Number(getLevel.value);
 
-  let have = Number(getHave.value),       // 所持しているピースの数
-      remaining = Number(getRem.value),   // 現在のレート = 女神像の交換済み数
-      needS = 0,                          // トータルで必要な女神像の数（S = Statue 銅像）
-      changeRate = Number(getRate.value);         // ピース1個との交換に必要な、女神像の数
+  let have = Number(getHave.value),          // 所持しているピースの数
+      remaining = Number(getRem.value),      // 現在のレート = 女神像の交換済み数
+      needS = 0,                             // トータルで必要な女神像の数（S = Statue 銅像）
+      changeRate = Number(getRate.value);    // ピース1個との交換に必要な、女神像の数
 
   let count = 0,
       star2 = 0,
